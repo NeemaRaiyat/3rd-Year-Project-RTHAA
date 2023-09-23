@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.text-to-speech, .webcam-container {
+
+    margin-right:10px;
+    margin-left:0px;
+    float:left;
+}
+
+.speech-button {
+    margin: 5px;
+}
+
+.text-to-speech {
+    width: 400px;
+    max-width: 400px;
+}
+
+
+.webcam-button-container {
+    text-align: center;
+}
+
+.webcam {
+    float:left;
+    margin-right:5px;
+    width:500px;
+    height:350px;
+}
+
+.speech-box {
+    border:1px solid red;
+    width:100%;
+    height:100px;
+}
