@@ -82,10 +82,10 @@ while True:
     putText(frame, "Emotion:", (5, 75), 0.8, color1)
     putText(frame, f"{result['dominant_emotion']}", (130, 75), 0.8, color2)
 
-    putText(frame, "Gender:", (5, 100), 0.8, color1)
+    putText(frame, "Sex:", (5, 100), 0.8, color1)
     putText(frame, f"{result['gender']}", (130, 100), 0.8, color2)
 
-    putText(frame, "Race:", (5, 125), 0.8, color1)
+    putText(frame, "Ethnicity:", (5, 125), 0.8, color1)
     putText(frame, f"{result['dominant_race']}", (130, 125), 0.8, color2)
 
     putText(frame, "Age:", (5, 150), 0.8, color1)

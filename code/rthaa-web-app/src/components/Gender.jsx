@@ -8,15 +8,14 @@ const Gender = ( { gender } ) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
-    let color = colors.greenAccent[500]     // Default color is green
+    // Default color is green
+    let color = colors.greenAccent[500]
     let icon = '-'
 
     if (gender === "male") {
-        // color = "#66B2FF"    // Blue
         icon = (<MaleIcon fontSize="70px" />)
     }
     if (gender === "female") {
-        // color = "#FF99FF"    // Pink
         icon = (<FemaleIcon fontSize="70px" />)
     }
 

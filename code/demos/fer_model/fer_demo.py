@@ -46,7 +46,7 @@ while True:
         cv2.LINE_4) ;
 
     cv2.putText(frame,
-        'Gender: ' + result['gender'],
+        'Sex: ' + result['gender'],
         (50, 130),
         font, 1,
         (0, 0, 255),
@@ -69,9 +69,3 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-
-# cd code/local_model/
-# python emotion_detection.py
-
-# Source:
-# https://www.youtube.com/watch?v=fkgpvkqcoJc&list=LL&index=175&ab_channel=DeepLearning_by_PhDScholar

@@ -521,7 +521,6 @@ const Dashboard = () => {
                     display="grid"
                     gridTemplateColumns="repeat(48, 1fr)"
                     gridAutoRows="100px"    // Chrome
-                    // gridAutoRows="106px"    // Edge
                     gap="17px"
                 >
                     <SentimentScore sentimentScore={sentimentScore} />

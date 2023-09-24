@@ -34,18 +34,10 @@ while True:
     text = "Good Lighting!"
     color = (0, 255, 0)
 
-    # ! Use "Low Contrast" or "bad lighting"?
 
     if is_low_contrast(gray, LOW_CONTRAST_THRESH):
-        # text = "Low contrast: Yes"
         text = "Bad Lighting!"
         color = (0, 0, 255)
-
-    # if not is_low_contrast(gray, HIGH_CONTRAST_THRESH):
-    #     text = "Bad Lighting (Too bright!)"
-    #     color = (0, 0, 255)
-    
-    # print(f"Contast: {is_low_contrast(gray, HIGH_CONTRAST_THRESH)}")
 
     # draw the text on the output frame
     cv2.putText(frame, text, (5, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
@@ -68,5 +60,3 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-
-# source: https://pyimagesearch.com/2021/01/25/detecting-low-contrast-images-with-opencv-scikit-image-and-python/
