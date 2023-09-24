@@ -4,8 +4,7 @@ import imutils
 import cv2
 
 WEBCAM_ID = 0
-LOW_CONTRAST_THRESH = 0.45                  # Threshold for low contrast: 0.45
-HIGH_CONTRAST_THRESH = 0.95                 # Threshold for high contrast
+LOW_CONTRAST_THRESH = 0.50                  # Threshold for low contrast: 0.45
 DRAW_EDGE_MAP = True
 # Lower thresh, means that even slightly dark environments are considered high contrast 
 # (so it has to be really dark to be considered low constrast)

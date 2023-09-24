@@ -86,12 +86,23 @@ python fer_model/fer_demo.py
 
 ## Low-Contrast (LC) demo
 
-* `/lc_model` - Real-time **low-contrast** detection, i.e. detects poor lighting environments. This can be run as follows:
+* `/lc_model` - Real-time **low-contrast** detection, i.e. detects poor lighting environments. The better the lighting, the more edges that should be discernable, as shown on the right-hand side black and white image. Try shining a light on your face and more edges will appear, indicating better lighting! This can be run as follows:
 
 ```bash
 python lc_model/lc_demo.py
 ```
+
+> Good lighting, most major edges are discernable
+
 ![lc-demo](docs/images/cv_public3.png)
+
+> More light being shone on my face, and hence more edges are disernable
+
+![lc-demo](docs/images/cv_public7.png)
+
+> Poor lighting, few edges are discernable
+
+![lc-demo](docs/images/cv_public8.png)
 
 ## Sentiment Analysis (SA) demo
 
