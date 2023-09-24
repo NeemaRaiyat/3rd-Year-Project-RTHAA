@@ -12,7 +12,9 @@
 
 # What is RTHAA?
 
-Emotions form the fundamental basis for physical communication between humans. They give us a glimpse about our thought process and an insight of what is going on inside the mind. Therefore, measuring the changes in emotion induced by products is clearly an object of interest for businesses. Many existing systems that measure and monitor a human's emotion are restricted as they are unimodal, i.e. they use only a single channel of sensory input and hence are less reliable. RTHAA (pronounced: "Arthur") is a multimodal web application developed using React.js capable of, *real-time human attribute analysis* (RTHAA), that not only monitors a human's emotions using their facial expression, using deep learning, but also measures their speech-content sentiment, using sentiment analysis, resulting in a more comprehensive and robust tool. Other human attributes like age and sex are also measured as they can provide useful data on how different demographics interact with the system. User testing with people of varying ages, sexes and ethnicities showed that our application can more reliably measure a human's overall impression of a system compared to contemporary tools.
+Emotions form the fundamental basis for physical communication between humans. They give us a glimpse about our thought process and an insight of what is going on inside the mind. Therefore, measuring the changes in emotion induced by products is clearly an object of interest for businesses. Many existing systems that measure and monitor a human's emotion are restricted as they are unimodal, i.e. they use only a single channel of sensory input and hence are less reliable and accurate. 
+
+RTHAA (pronounced: "Arthur") is a multimodal web application developed using React.js capable of, *real-time human attribute analysis* (RTHAA), that not only monitors a human's emotions using their facial expression, using deep learning, but also measures their speech-content sentiment, using sentiment analysis, resulting in a more comprehensive and robust tool. Other human attributes like age and sex are also measured as they can provide useful data on how different demographics interact with the system. User testing with people of varying ages, sexes and ethnicities showed that our application can more reliably measure a human's overall impression of a system compared to contemporary tools.
 
 > Angry face, negative sentiment, dark colour theme:
 
@@ -26,6 +28,9 @@ Emotions form the fundamental basis for physical communication between humans. T
 
 ![RTHAA-dashboard](docs/images/webappFE12H.png)
 
+
+---
+
 # Navigating this repo
 
 The directory skeleton of the key directories/files is as follows:
@@ -37,24 +42,31 @@ The directory skeleton of the key directories/files is as follows:
 │   ├── demos/
 │   │   ├── fer_model/
 │   │   ├── lc_model/
-│   │   └── sa_model/
-│   └── rthaa-web-app/
+│   │   ├── sa_model/
+│   │   └── demo.py
+│   ├── rthaa-web-app/
+│   └── datasets_eda.ipynb
 ├── docs/
 │   ├── diagrams/
 │   └── images/
-├── README.md
 └── dissertation.pdf
 ```
 
-* `code` - Contains 3 items:
+* `/code` - Contains 4 items:
 
-    * `backend-processing-architecture` - A React app that utilizes a server in to process user data
+    * `/backend-processing-architecture` - A React app that utilizes a server in to process user data
 
-    * `demos` - Contains demos (that can be run locally) of the various models used in RTHAA
+    * `/demos` - Contains demos (that can be run locally) of the various models used in RTHAA
 
-    * `rthaa-web-app` - A React app where user data processing is done entirely in the browser
+    * `/rthaa-web-app` - The main **RTHAA** React app where user data processing is done entirely in the browser
 
-* `docs` - Contains relevant project images and diagrams used in the `dissertation.pdf`
+    * `datasets_eda.ipynb` - A brief EDA of the datasets used to train the various models in this project 
+
+* `/docs` - Contains various project documentation and images
+
+* `dissertation.pdf` - 18,000 word document that explains the entire background, design, implmentation, testing and evaluation of this application. A fun read ;)
+
+---
 
 # Running demos
 
@@ -70,7 +82,7 @@ Navigate to `/code/demos` which contains all the demos:
 python fer_model/fer_demo.py
 ```
 
-![RTHAA-dashboard](docs/images/cv_public4.png)
+![fer-demo](docs/images/cv_public4.png)
 
 ## Low-Contrast (LC) demo
 
@@ -79,7 +91,7 @@ python fer_model/fer_demo.py
 ```bash
 python lc_model/lc_demo.py
 ```
-![RTHAA-dashboard](docs/images/cv_public3.png)
+![lc-demo](docs/images/cv_public3.png)
 
 ## Sentiment Analysis (SA) demo
 
@@ -88,7 +100,7 @@ python lc_model/lc_demo.py
 python sa_model/sa_demo.py
 ```
 
-![RTHAA-dashboard](docs/images/cv_public5.png)
+![sa-demo](docs/images/cv_public5.png)
 
 ## Facial Landmark demo
 
@@ -96,8 +108,9 @@ python sa_model/sa_demo.py
 ```bash
 python demo.py
 ```
-![RTHAA-dashboard](docs/images/cv_public6.png)
+![fl-demo](docs/images/cv_public6.png)
 
+---
 
 # Running RTHAA
 
@@ -110,6 +123,8 @@ RTHAA was the final software output developed in this project. Its source code c
 * `/src` contains source code
 
 * `package.json` specifies required packages
+
+![RTHAA-dashboard](docs/images/webappFE13H.png)
 
 In order to run RTHAA:
 
@@ -137,6 +152,8 @@ The `public` folder contains the `models` folder which contains the pre-trained 
 # Running Backend-Processing Architecture
 
 This was the intial application developed in the first few sprints of the development phase of the project, and was later abandond due to performance reasons as discussed in Sections 5.1 and 6.1 of the final report. 
+
+![BPA-dashboard](docs/images/webappFE3H.png)
 
 In order to run:
 
